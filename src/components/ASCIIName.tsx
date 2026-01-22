@@ -90,7 +90,7 @@ const ASCIIName: React.FC = () => {
 
     const width = 1100;
     const height = 160;
-    const hoverRadius = 12;
+    const hoverRadius = 14;
 
     const render = () => {
       ctx.clearRect(0, 0, width, height);
@@ -108,12 +108,12 @@ const ASCIIName: React.FC = () => {
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
 
-          // Occasionally flip the binary for animation
-          const displayChar = Math.random() > 0.95
-            ? (p.char === '0' ? '1' : '0')
-            : p.char;
+          // Rapidly changing binary like Matrix rain
+          const displayChar = Math.random() > 0.5 ? '0' : '1';
 
-          ctx.fillStyle = `rgba(65, 65, 200, ${p.opacity})`;
+          // Vary brightness for that flickering Matrix effect
+          const flicker = 0.7 + Math.random() * 0.3;
+          ctx.fillStyle = `rgba(0, 140, 0, ${p.opacity * flicker})`;
           ctx.fillText(displayChar, p.x, p.y);
         } else {
           // Show solid dot
