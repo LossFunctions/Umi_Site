@@ -113,7 +113,7 @@ const ASCIIName: React.FC = () => {
 
           // Vary brightness for that flickering Matrix effect
           const flicker = 0.7 + Math.random() * 0.3;
-          ctx.fillStyle = `rgba(0, 140, 0, ${p.opacity * flicker})`;
+          ctx.fillStyle = `rgba(30, 64, 175, ${p.opacity * flicker})`;
           ctx.fillText(displayChar, p.x, p.y);
         } else {
           // Show solid dot
