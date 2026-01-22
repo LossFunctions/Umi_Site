@@ -1,4 +1,15 @@
 export { default as Navbar } from './Navbar';
-export { default as ProjectCarousel } from './ProjectCarousel';
-export { default as SummaryCard } from './SummaryCard';
 export { default as Footer } from './Footer';
+export { default as Section } from './Section';
+export { default as Hero } from './Hero';
+export { default as RoleTicker } from './RoleTicker';
+export { default as AnimatedCounter } from './AnimatedCounter';
+export { default as ASCIISphere } from './ASCIISphere';
+export { default as ASCIIBackground } from './ASCIIBackground';
+export { default as InteractiveASCII } from './InteractiveASCII';
+export { default as ASCIIName } from './ASCIIName';
+export { default as About } from './About';
+export { default as WorkExperience } from './WorkExperience';
+export { default as Skills } from './Skills';
+export { default as Contact } from './Contact';
+export { default as Projects } from './Projects';

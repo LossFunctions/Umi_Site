@@ -1,52 +1,39 @@
 import React from 'react';
 import { Mail, Linkedin, Github, Twitter } from 'lucide-react';
 
+const socialLinks = [
+  { icon: Mail, label: 'Email', href: 'mailto:umihuss@gmail.com' },
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/umihussaini/' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/LossFunctions' },
+  { icon: Twitter, label: 'Twitter', href: 'https://x.com/LossFunctions' },
+];
+
 const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="w-full border-t-[3px] border-gray-900 mt-16">
-      <div className="max-w-4xl mx-auto px-4 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 text-gray-900 text-sm">
-          {/* Left column - Contact info */}
-          <div className="flex flex-col md:flex-row items-start md:items-center space-y-2 md:space-y-0 md:space-x-6">
-            <p className="font-mono">Checkout my links -⫸</p>
+    <footer className="section-dark py-12">
+      <div className="container-custom">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          {/* Copyright */}
+          <div className="text-text-muted-dark text-sm order-2 md:order-1">
+            © {currentYear} Umi Hussaini. All rights reserved.
           </div>
-          
-          {/* Right column - Social links */}
-          <div className="flex justify-start md:justify-end items-center space-x-4">
-            <a
-              href="mailto:umihuss@gmail.com"
-              className="hover:underline flex items-center gap-1 hover:-translate-y-0.5 transition-transform"
-            >
-              <Mail className="w-4 h-4" />
-              Email
-            </a>
-            <a
-              href="https://www.linkedin.com/in/umihussaini/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline flex items-center gap-1 hover:-translate-y-0.5 transition-transform"
-            >
-              <Linkedin className="w-4 h-4" />
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/LossFunctions"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline flex items-center gap-1 hover:-translate-y-0.5 transition-transform"
-            >
-              <Github className="w-4 h-4" />
-              GitHub
-            </a>
-            <a
-              href="https://x.com/LossFunctions"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline flex items-center gap-1 hover:-translate-y-0.5 transition-transform"
-            >
-              <Twitter className="w-4 h-4" />
-              Twitter
-            </a>
+
+          {/* Social Links */}
+          <div className="flex items-center gap-4 order-1 md:order-2">
+            {socialLinks.map(({ icon: Icon, label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith('mailto:') ? undefined : '_blank'}
+                rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+                className="p-2 text-text-muted-dark hover:text-accent-cyan hover:glow-cyan rounded-full transition-all duration-200"
+                aria-label={label}
+              >
+                <Icon className="w-5 h-5" />
+              </a>
+            ))}
           </div>
         </div>
       </div>
