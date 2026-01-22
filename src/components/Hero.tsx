@@ -7,7 +7,7 @@ import { ArrowRight, ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="section-light min-h-screen flex flex-col justify-center py-20 md:py-32 relative overflow-hidden">
+    <section className="section-light flex flex-col justify-center py-20 md:py-28 relative overflow-hidden">
       {/* Interactive ASCII Background */}
       <InteractiveASCII />
 
@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         {/* Micro label */}
         <div className="mb-6 flex justify-center">
           <span className="text-xs font-medium tracking-widest uppercase text-text-muted">
-            Sales Leader & AI Builder
+            Proven Client Service Leader & AI Builder
           </span>
         </div>
 
@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href="#experience"
+            href="#about"
             className="btn-pill btn-pill-outline flex items-center gap-2"
           >
             View Experience

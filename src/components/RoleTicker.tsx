@@ -12,25 +12,31 @@ const roles: Role[] = [
     company: 'Clear Channel Outdoors',
     title: 'Manager of Account Management',
     period: '2025 - Present',
-    highlight: 'Managing $15M/quarter revenue',
+    highlight: 'Manage a team, oversee $15M/quarter, & build AI tools',
   },
   {
     company: 'StackAdapt',
-    title: 'Account Executive',
-    period: '2022 - 2024',
+    title: 'Programmatic Account Executive',
+    period: '2023 - 2025',
     highlight: 'Avg 115% quota attainment',
+  },
+  {
+    company: 'StackAdapt',
+    title: 'Sr. Programmatic Account Manager',
+    period: '2022 - 2023',
+    highlight: '$1.5M quarterly revenue managed',
   },
   {
     company: 'Aki Technologies',
     title: 'Sr. Account Manager',
     period: '2016 - 2021',
-    highlight: '$3M+ quarterly revenue',
+    highlight: '$3M+ quarterly revenue managed',
   },
   {
-    company: 'Side Projects',
+    company: 'AI Custom Tools',
     title: 'AI Builder',
     period: 'Ongoing',
-    highlight: 'Automation & ML tools',
+    highlight: 'Automation & Custom Workflows',
   },
 ];
 

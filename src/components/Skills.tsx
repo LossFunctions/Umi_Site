@@ -13,13 +13,13 @@ const skillCategories: SkillCategory[] = [
   {
     title: 'DSPs & SSPs',
     icon: Monitor,
-    skills: ['The Trade Desk', 'StackAdapt', 'DV360', 'Vistar', 'PlaceExchange', 'Magnite'],
+    skills: ['The Trade Desk', 'StackAdapt', 'DV360', 'Vistar', 'PlaceExchange', 'Magnite', 'Broadsign'],
     color: 'bg-blue-500/10 text-blue-600',
   },
   {
     title: 'AdTech & Measurement',
     icon: BarChart3,
-    skills: ['PMP/PG Deals', 'Brand/Sales Lift Studies', 'Foot Traffic', 'Rich Media (Celtra)', 'Programmatic'],
+    skills: ['PMP & PG Deals', 'Brand/Sales Lift Studies', 'Foot Traffic', 'Rich Media (Celtra)', 'Millward Brown', 'IRI Sales', 'Cuebiq', 'Catalina'],
     color: 'bg-purple-500/10 text-purple-600',
   },
   {

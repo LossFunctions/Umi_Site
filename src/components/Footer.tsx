@@ -1,11 +1,10 @@
 import React from 'react';
-import { Mail, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, Linkedin, Github } from 'lucide-react';
 
 const socialLinks = [
   { icon: Mail, label: 'Email', href: 'mailto:umihuss@gmail.com' },
   { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/umihussaini/' },
   { icon: Github, label: 'GitHub', href: 'https://github.com/LossFunctions' },
-  { icon: Twitter, label: 'Twitter', href: 'https://x.com/LossFunctions' },
 ];
 
 const Footer: React.FC = () => {

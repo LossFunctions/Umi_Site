@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from './Section';
-import { Mail, Linkedin, Github, Twitter, ArrowUpRight } from 'lucide-react';
+import { Mail, Linkedin, Github, ArrowUpRight } from 'lucide-react';
 
 const contactLinks = [
   {
@@ -21,12 +21,6 @@ const contactLinks = [
     value: 'github.com/LossFunctions',
     href: 'https://github.com/LossFunctions',
   },
-  {
-    icon: Twitter,
-    label: 'Twitter',
-    value: '@LossFunctions',
-    href: 'https://x.com/LossFunctions',
-  },
 ];
 
 const Contact: React.FC = () => {
@@ -37,8 +31,7 @@ const Contact: React.FC = () => {
           Let's Connect
         </h2>
         <p className="text-lg text-text-muted-dark mb-12">
-          Whether you want to discuss a business opportunity, collaborate on a
-          project, or just say hello — I'd love to hear from you.
+          Whether you want to discuss AI, Programmatic, or reach out on an opportunity-- I'd love to hear from you.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
