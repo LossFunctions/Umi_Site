@@ -11,6 +11,7 @@ interface Role {
 
 interface Experience {
   company: string;
+  companyNote?: string;
   logo?: string;
   totalTenure?: string;
   roles: Role[];
@@ -62,6 +63,7 @@ const experiences: Experience[] = [
   },
   {
     company: 'Aki Technologies',
+    companyNote: '(Acquired by Inmar Intelligence)',
     logo: '/logos/aki.svg',
     roles: [{ title: 'Sr. Account Manager, Client Services', period: 'Jul 2016 - Dec 2021' }],
     location: 'New York City',
@@ -128,6 +130,11 @@ const WorkExperience: React.FC = () => {
                       <div>
                         <p className="text-accent-cyan font-bold text-xl">
                           {exp.company}
+                          {exp.companyNote && (
+                            <span className="text-sm font-normal text-text-muted-dark ml-2">
+                              {exp.companyNote}
+                            </span>
+                          )}
                         </p>
                         {exp.totalTenure && (
                           <p className="text-sm text-text-muted-dark">

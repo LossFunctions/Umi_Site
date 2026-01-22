@@ -12,13 +12,13 @@ const contactLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/umihussaini',
+    value: '/in/umihussaini',
     href: 'https://www.linkedin.com/in/umihussaini/',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/LossFunctions',
+    value: '/LossFunctions',
     href: 'https://github.com/LossFunctions',
   },
 ];
@@ -26,7 +26,7 @@ const contactLinks = [
 const Contact: React.FC = () => {
   return (
     <Section variant="dark" id="contact">
-      <div className="max-w-3xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-bold text-text-light mb-4">
           Let's Connect
         </h2>
@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
           Whether you want to discuss AI, Programmatic, or reach out on an opportunity-- I'd love to hear from you.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {contactLinks.map(({ icon: Icon, label, value, href }) => (
             <a
               key={label}
